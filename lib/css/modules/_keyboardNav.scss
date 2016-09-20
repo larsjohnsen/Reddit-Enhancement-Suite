@@ -30,8 +30,17 @@
 	}
 }
 
-.keyNavAnnotation {
-	font-size: 9px;
-	line-height: 0;
-	vertical-align: super;
+.res-key-link {
+	position: relative;
+	z-index: 1;
+
+	.keyNavAnnotation {
+		z-index: -1;
+		position: absolute;
+		bottom: 0px;
+		right: -4px;
+		font-size: 9px;
+		line-height: 0;
+		color: black;
+	}
 }
