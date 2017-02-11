@@ -588,6 +588,12 @@
 	"keyboardNavToggleExpandoDesc": {
 		"message": "Toggle expando (image/text/video)."
 	},
+	"keyboardNavToggleExpandoExpandoStickynessTitle": {
+		 "message": "Sticky expando."
+	},
+	 "keyboardNavToggleExpandoStickynessDesc": {
+		 "message": "Toggle expando stickyness."
+	},
 	"keyboardNavImageSizeUpTitle": {
 		"message": "Image Size Up"
 	},
