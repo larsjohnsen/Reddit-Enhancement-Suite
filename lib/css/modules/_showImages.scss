@@ -48,25 +48,26 @@ img {
 		padding: 0;
 	}
 
-	.comment > .parent > &.linkImg,
-	&.commentImg {
-		vertical-align: middle !important;
-		float: none;
-		display: inline-block;
-		margin: 0 4px;
+	@at-root .res-freetext-expando {
+		.expando-button { // TODO Is there a way to use `&` instead and have it refer to the grandparent?
+			vertical-align: middle !important;
+			display: inline-block;
+			float: none;
+			margin: 0 4px;
+
+			// Override native
+			&.selftext.expanded {
+				margin-bottom: initial;
+			}
+
+			.comment > .parent > & {
+				margin-left: 0;
+			}
+		}
 
 		+ .res-expando-box {
 			margin-top: 3px;
 		}
-
-		// Override native
-		&.selftext.expanded {
-			margin-bottom: initial;
-		}
-	}
-
-	.comment > .parent > &.linkImg {
-		margin-left: 0;
 	}
 
 	&-duplicate {
