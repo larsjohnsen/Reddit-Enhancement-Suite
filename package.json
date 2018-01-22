@@ -60,6 +60,7 @@
     ]
   },
   "dependencies": {
+    "diff": "^3.4.0",
     "element-resize-detector": "1.1.12",
     "fast-levenshtein": "2.0.6",
     "favico.js": "0.3.10",
